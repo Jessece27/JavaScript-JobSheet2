@@ -146,11 +146,10 @@ function getProductWithMostReviews(products) {
 console.log(getProductWithMostReviews(product));
 
 //bagian 3.7 
-const allReviewRatings = product
-    .flatMap(p => p.reviews)
-    .map(r => r.rating);
-
-console.log(allReviewRatings);
+function getAllReviewRatings(product) {
+    return product.flatMap(p => p.reviews.map(r => r.rating));
+}
+console.log(getAllReviewRatings(product));
 
 //bagian 4
 //bagian 4.1 
