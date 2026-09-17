@@ -145,7 +145,7 @@ function getProductWithMostReviews(products) {
 }
 console.log(getProductWithMostReviews(product));
 
-//bagian 3.7 - Semua nilai rating dari semua review, jadi satu array datar
+//bagian 3.7 
 const allReviewRatings = product
     .flatMap(p => p.reviews)
     .map(r => r.rating);
